@@ -127,6 +127,7 @@ module.exports = {
 	resolve: {
 		alias: {
 			'react-dom': '@hot-loader/react-dom',
+			'react-dom$': 'react-dom/profiling',
 		},
 		extensions: ['.ts', '.tsx', '.js', '.json', '.jsx', '.scss'],
 	},
