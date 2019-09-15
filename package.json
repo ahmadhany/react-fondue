@@ -123,8 +123,8 @@
 		"webpack-node-externals": "^1.7.2"
 	},
 	"scripts": {
-		"prod": "NODE_ENV=production node src/server/main.js",
-		"dev": "NODE_ENV=development nodemon --watch src/server --watch config --inspect src/server/main.js",
+		"prod": "SET NODE_ENV=production && node src/server/main.js",
+		"dev": "SET NODE_ENV=development && nodemon --watch src/server --watch config --inspect src/server/main.js",
 		"lint:css": "stylelint src/**/*.css",
 		"lint:js": "eslint src/**/*.js",
 		"lint:fix": "eslint src/**/*.js --fix",
